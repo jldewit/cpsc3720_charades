@@ -11,14 +11,18 @@ keepAdd = True
 while(keepAdd):
     add = input("would you like to add a word to the list? (Y/N) ")
     if(add == 'Y')or(add == 'y'):
-        words.append(input("enter the word you would like to add to the list "))
+        temp = input("enter the word you would like to add to the list ")
+        if(function.spellcheck(temp)):
+            words.append(temp)
     else:
         if(len(words) == 0):
             print("there are no words in the list, please add a word ")
     while((add!='N') and (add!='n')):
         add = input("would you like to add a word to the list? (Y/N) ")
         if(add == 'Y')or(add == 'y'):
-            words.append(input("enter the word you would like to add to the list "))
+            temp = input("enter the word you would like to add to the list ")
+            if(function.spellcheck(temp)):
+                words.append(temp)
         else:
             if(len(words) == 0):
                 print("there are no words in the list, please add a word ")
