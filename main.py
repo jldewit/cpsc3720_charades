@@ -25,7 +25,7 @@ while(keepAdd):
             else:
                 keepAdd = False
 print("the game will draw from the following words: ")
-for x in range(len(words)-1):
+for x in range(len(words)):
     print(words[x])
 while((rounds>0) and (len(words)>0)):
     words = functions.shuffle(words)
