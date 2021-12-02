@@ -9,12 +9,10 @@ spell = SpellChecker()
 #uses the SpellChecker api to run a spell check on the word
 #returns 
 def spellcheck(word):
-    misspelled = spell.unknown([word])
-    for i in misspelled:
-            if (spell.correction(word) != word):
-                return False
-            else: 
-                return True
+    if (spell.correction(word) != word):
+        return False
+    else: 
+        return True
     
 #TODO
 #takes a list of strings as a parameter
