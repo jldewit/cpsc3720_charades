@@ -15,10 +15,10 @@ def spellcheck(word):
 #randomly selects a string from the list
 #returns the randomly selected string
 def draw(words):
-    
+    pass
 
 #TODO
 #takes a list of strings as a parmeter
 #returns the shuffled list
 def shuffle(words):
-    
+    pass
