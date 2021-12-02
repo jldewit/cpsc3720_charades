@@ -10,7 +10,7 @@ spell = SpellChecker()
 #returns 
 def spellcheck(word):
     misspelled = spell.unknown([word])
-    for i in misspelled
+    for i in misspelled:
             if (spell.correction(word) != word)
                 return false
             else 
