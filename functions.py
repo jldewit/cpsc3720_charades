@@ -19,10 +19,14 @@ def spellcheck(word):
 #randomly selects a string from the list
 #returns the randomly selected string
 def draw(words):
-    pass
+    l = len(words)
+    r = random.randint(0, l-1)
+    return words[r]
+
 
 #TODO
 #takes a list of strings as a parmeter
 #returns the shuffled list
 def shuffle(words):
-    pass
+    random.shuffle(words)
+    return words
