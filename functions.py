@@ -1,6 +1,6 @@
 import os
 import random
-import SpellChecker
+from spellchecker import SpellChecker
 
 spell = SpellChecker()
 
