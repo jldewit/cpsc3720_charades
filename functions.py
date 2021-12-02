@@ -11,9 +11,9 @@ spell = SpellChecker()
 def spellcheck(word):
     misspelled = spell.unknown([word])
     for i in misspelled:
-            if (spell.correction(word) != word)
+            if (spell.correction(word) != word):
                 return false
-            else 
+            else: 
                 return true
     
 #TODO
