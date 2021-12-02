@@ -12,9 +12,9 @@ def spellcheck(word):
     misspelled = spell.unknown([word])
     for i in misspelled:
             if (spell.correction(word) != word):
-                return false
+                return False
             else: 
-                return true
+                return True
     
 #TODO
 #takes a list of strings as a parameter
