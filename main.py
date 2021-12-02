@@ -12,7 +12,7 @@ while(keepAdd):
     add = input("would you like to add a word to the list? (Y/N) ")
     if(add == 'Y')or(add == 'y'):
         temp = input("enter the word you would like to add to the list ")
-        if(functions.spellcheck(temp)):
+        if(functions.spellcheck(temp) == True):
             words.append(temp)
     else:
         if(len(words) == 0):
@@ -21,7 +21,7 @@ while(keepAdd):
         add = input("would you like to add a word to the list? (Y/N) ")
         if(add == 'Y')or(add == 'y'):
             temp = input("enter the word you would like to add to the list ")
-            if(functions.spellcheck(temp)):
+            if(functions.spellcheck(temp) == True):
                 words.append(temp)
         else:
             if(len(words) == 0):
